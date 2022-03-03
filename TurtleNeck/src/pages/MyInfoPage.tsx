@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import { styled } from '@stitches/react';
+import {styled} from '../style/theme';
 
 const MyInfoPageBack = styled('div', {
     padding: '0',
@@ -16,14 +16,24 @@ const LeftSpace = styled('span',{
     background: 'olive',
     height: '100vh',
     width: '45vw',
-    display: 'flex'
+    display: 'flex',
+
+    '@mobile':{
+        display:'none'
+    },
+    '@tabletS':{
+        width:'25vw',
+    }
 })
 
 const MyInfoPageSection = styled('div', {
     background: 'Ivory',
     width: '30rem',
     border: 'solid 1px',
-    height: '100vh'
+    height: '100vh',
+    '@mobile':{
+        width:'100vw'
+    },
 })
 
 const MyInfoPageContents = styled('span', {

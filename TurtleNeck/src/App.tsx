@@ -1,13 +1,13 @@
 import LoginPage from './pages/LoginPage'
 import MyInfoPage from './pages/MyInfoPage'
 import PostPage from './pages/PostPage'
-import theme from './style/theme'
 
 import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 import { styled } from '@stitches/react';
 
 const FullWindow = styled('div', {
-  border: 'solid 1px'
+  margin: 0,
+  padding: 0
 })
 
 function App() {

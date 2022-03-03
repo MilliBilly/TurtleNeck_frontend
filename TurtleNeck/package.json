@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "npm run build && cp -r dist/* ../../TurtleNeck/src/main/resources/static/"
   },
   "dependencies": {
     "@stitches/react": "^1.2.7",

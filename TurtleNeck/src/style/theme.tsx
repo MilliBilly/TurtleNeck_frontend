@@ -1,3 +1,5 @@
+import {createStitches} from '@stitches/react';
+
 const size = {
     mobile: "770px",
     tabletS: "1023px",
@@ -8,12 +10,21 @@ const size = {
 };
 
 const theme = {
-    mobile: `(max-width: ${size.mobile}`,
-    tabletS: `(max-width: ${size.tabletS}`,
-    tabletM: `(max-width: ${size.tabletM}`,
-    tabletL: `(max-width: ${size.tabletL}`,
-    laptop: `(max-width: ${size.laptop}`,
-    desktop: `(max-width: ${size.desktop}`
+    mobile: `(max-width: ${size.mobile})`,
+    tabletS: `(max-width: ${size.tabletS})`,
+    tabletM: `(max-width: ${size.tabletM})`,
+    tabletL: `(max-width: ${size.tabletL})`,
+    laptop: `(max-width: ${size.laptop})`,
+    desktop: `(max-width: ${size.desktop})`
 };
 
-export default theme;
+export const { styled, css } = createStitches({
+  media: {
+    mobile: theme.mobile,
+    tabletS: theme.tabletS,
+    tabletM: theme.tabletM,
+    tabletL: theme.tabletL,
+    laptop: theme.laptop,
+    desktop: theme.desktop
+  },
+});
