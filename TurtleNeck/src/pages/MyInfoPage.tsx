@@ -1,50 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import {styled} from '../style/theme';
-
-const MyInfoPageBack = styled('div', {
-    padding: '0',
-    margin: '0',
-    background: 'Olive',
-    height: '100vh',
-    display: 'flex'
-})
-
-const LeftSpace = styled('span',{
-    padding: '0',
-    margin: '0',
-    background: 'olive',
-    height: '100vh',
-    width: '45vw',
-    display: 'flex',
-
-    '@mobile':{
-        display:'none'
-    },
-    '@tabletS':{
-        width:'25vw',
-    }
-})
-
-const MyInfoPageSection = styled('div', {
-    background: 'Ivory',
-    width: '30rem',
-    border: 'solid 1px',
-    height: '100vh',
-    '@mobile':{
-        width:'100vw'
-    },
-})
-
-const MyInfoPageContents = styled('span', {
-    color:'Orange',
-    fontSize: '30px'
-});
-
-const FlagTitle = styled('span',{
-    alignSelf:'center',
-    fontSize: '40px'
-})
+import {PageBack, PageContents, PageSection, LeftSpace, FlagTitle, LogoImg} from '../style/basicComponents';
 
 const MyInfoPage = () =>{
     const basicButtonReaction = (name:string) => {
@@ -52,16 +8,18 @@ const MyInfoPage = () =>{
     }
 
     return (
-        <MyInfoPageBack className='back'>
+        <PageBack className='back'>
             <LeftSpace>
+                <LogoImg src='./src//images/TurtleNeck.png'>
+                </LogoImg>
                 <FlagTitle>
                     🚩 this Page is TurtleNeck's <br/>Test MyInfoPages.
                 </FlagTitle>
             </LeftSpace>
-            <MyInfoPageSection>
-                <MyInfoPageContents>
+            <PageSection>
+                <PageContents>
                     <p>
-                        (check Console Log.)
+                        -> If you check the button's work, <br/>check Console Log
                     </p>
                     <button type='button' onClick={() => {basicButtonReaction("button1")}}>
                         1: ClickMe!
@@ -80,9 +38,9 @@ const MyInfoPage = () =>{
                             <Link to="/myinfo">👥 Go to Myinfo Pages</Link>
                         </li>
                     </ul>
-                </MyInfoPageContents>
-            </MyInfoPageSection>
-        </MyInfoPageBack>
+                </PageContents>
+            </PageSection>
+        </PageBack>
     )
 }
 
