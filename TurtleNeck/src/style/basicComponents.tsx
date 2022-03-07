@@ -14,13 +14,14 @@ export const LeftSpace = styled('div',{
     background: '#FFFFFF',
     height: '100vh',
     width: '50vw',
-    display: 'block',
-
+    display: 'flex',
+    alignItems: 'center',
+    justifyItems: 'center',
+    '@tabletS':{
+        width:'30vw'
+    },
     '@mobile':{
         display:'none'
-    },
-    '@tabletS':{
-        width:'25vw',
     }
 })
 
@@ -32,9 +33,12 @@ export const PageSection = styled('div', {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    '@tabletS':{
+        width:'70vw'
+    },
     '@mobile':{
         width:'100vw'
-    },
+    }
 })
 
 export const PageContents = styled('span', {
@@ -43,15 +47,30 @@ export const PageContents = styled('span', {
     // justifyContent: 'center'
 });
 
-export const FlagTitle = styled('div',{
-    fontSize: '40px'
+export const FlagTitle = styled('span',{
+    fontSize: '40px',
+    display: 'block',
+    width: '30rem',
+    margin: 'auto',
+    textAlign: 'center',
+    '@tabletS':{
+        // display: 'none'
+        width: '10rem',
+        fontSize: '1rem'
+    }
 })
 
 export const LogoImg = styled('img', {
     width: '30rem',
     display: 'block',
+    margin: 'auto',
+
     '@tabletS':{
         // display: 'none'
-        width: '10rem'
+        width: '15rem'
     }
+})
+
+export const LeftWrapper = styled('div', {
+    width: '100%'
 })

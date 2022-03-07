@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import {PageBack, PageContents, PageSection, LeftSpace, FlagTitle, LogoImg} from '../style/basicComponents';
+import {PageBack, PageContents, PageSection, LeftSpace, FlagTitle, LogoImg, LeftWrapper} from '../style/basicComponents';
 
 const MyInfoPage = () =>{
     const basicButtonReaction = (name:string) => {
@@ -10,16 +10,18 @@ const MyInfoPage = () =>{
     return (
         <PageBack className='back'>
             <LeftSpace>
-                <LogoImg src='./src//images/TurtleNeck.png'>
-                </LogoImg>
-                <FlagTitle>
-                    🚩 this Page is TurtleNeck's <br/>Test MyInfoPages.
-                </FlagTitle>
+                <LeftWrapper>
+                    <LogoImg src='./src//images/TurtleNeck.png'>
+                    </LogoImg>
+                    <FlagTitle>
+                        🚩 Test MyInfoPages.
+                    </FlagTitle>
+                </LeftWrapper>
             </LeftSpace>
             <PageSection>
                 <PageContents>
                     <p>
-                        -> If you check the button's work, <br/>check Console Log
+                        - If you check the button's work, <br/>check Console Log
                     </p>
                     <button type='button' onClick={() => {basicButtonReaction("button1")}}>
                         1: ClickMe!
