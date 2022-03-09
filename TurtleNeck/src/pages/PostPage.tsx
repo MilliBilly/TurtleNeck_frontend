@@ -24,10 +24,10 @@ const PostPage = () =>{
                         - If you check the button's work, <br/>check Console Log
                     </p>
                     <button type='button' onClick={() => {basicButtonReaction("button1")}}>
-                        1: ClickMe!
+                        1: Click Me!
                     </button>
                     <button type='button' onClick={() => {basicButtonReaction("button2")}}>
-                        2: ClickMe!
+                        2: Click Me!
                     </button>
                     <ul>
                         <li>
