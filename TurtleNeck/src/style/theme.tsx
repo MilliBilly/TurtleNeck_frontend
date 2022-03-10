@@ -1,5 +1,6 @@
 import {createStitches} from '@stitches/react';
 
+
 const size = {
     mobile: "770px",
     tabletS: "1023px",
@@ -9,6 +10,7 @@ const size = {
     desktop: "1700px"
 };
 
+
 const theme = {
     mobile: `(max-width: ${size.mobile})`,
     tabletS: `(max-width: ${size.tabletS})`,
@@ -17,6 +19,7 @@ const theme = {
     laptop: `(max-width: ${size.laptop})`,
     desktop: `(max-width: ${size.desktop})`
 };
+
 
 export const { styled, css } = createStitches({
   media: {
