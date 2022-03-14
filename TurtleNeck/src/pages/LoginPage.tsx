@@ -46,6 +46,7 @@ import {PageBack, PageContents, PageSection, LeftSpace, FlagTitle, LogoImg, Left
 //     fontSize: '40px'
 // })
 
+
 // const approveAndDecline = {
 //     variants: {
 //         approve: {

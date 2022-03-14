@@ -6,7 +6,6 @@ const PostPage = () =>{
     const basicButtonReaction = (name:string) => {
         console.log(name + " is clicked");
     }
-
     return (
         <PageBack className='back'>
             <LeftSpace>
